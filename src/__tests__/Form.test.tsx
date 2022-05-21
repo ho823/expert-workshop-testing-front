@@ -33,4 +33,7 @@ test(
 
     expect(btn).not.toBeNull();
     expect(btn).toBeInstanceOf(HTMLButtonElement);
+    expect(screen.queryByTestId("useername")).not.toBeNull();
+    expect(screen.queryByTestId("useername")).toBeInstanceOf(HTMLInputElement);
+
 });
